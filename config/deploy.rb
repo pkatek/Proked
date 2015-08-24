@@ -11,6 +11,7 @@ set :use_sudo, false
 set :bundle_binstubs, nil
 set :linked_files, fetch(:linked_files, []).push('config/database.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
 after 'deploy:publishing', 'deploy:restart'
 

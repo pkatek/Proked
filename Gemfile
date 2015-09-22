@@ -29,7 +29,8 @@ gem 'sinatra', '1.3.3'
 # gem 'bcrypt', '~> 3.1.7'
 
 group :production do
-  gem 'pg'
+  #gem 'pg'
+  gem 'mysql2'
 end
 
 
